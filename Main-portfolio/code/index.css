@@ -17,6 +17,13 @@ body {
   color: var(--color);
   background: var(--bgColor);
 }
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
 /* .main {
   display: flex;
   /* flex-direction: column; */
