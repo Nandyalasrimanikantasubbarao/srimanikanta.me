@@ -1510,7 +1510,7 @@ span {
     transition: all 0.2s;
     position: absolute;
   }
-  ..btn-white {
+  .btn-white {
     background-color: orange;
     color: black;
   }
