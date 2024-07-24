@@ -6,13 +6,20 @@
     <link rel="stylesheet" href="./index.css" />
     <title>portfolio</title>
   </head>
-  <body>
+  <body
+    data-work="anime"
+    data-query='{"status":7}'
+    data-owner=""
+    data-owner-id="4457115"
+    data-owner-name="Looshi"
+    style="overflow-x: hidden"
+  >
     <div>
       <header>
         <nav>
           <ul class="nav-bar">
             <li><a href="#contact">Home</a></li>
-            <li><a href="#about">About</a></li>
+            <li><a id="About-section" href="#about">About</a></li>
             <li><a href="#contact">Skills</a></li>
             <li><a href="#portfolio">Projects</a></li>
             <li><a href="#portfolio">Education</a></li>
@@ -21,10 +28,34 @@
 
         <section class="main-text">
           <div class="text-head">
-            <p class="text-low">I'm</p>
+            <p class="text-low">Hi this is</p>
             <div>
-              <h1>Maniknata</h1>
-              <p id="text-low">web developer</p>
+              <h1>Manikanta</h1>
+            </div>
+            <div class="fafa-icons">
+              <a
+                href="https://github.com/Nandyalasrimanikantasubbarao"
+                target="_blank"
+                id="github"
+              >
+                <img
+                  src="/Main-portfolio/Assets/github-sign.png"
+                  alt="github-img"
+                  height="30px"
+                />
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/srimani-nandyala-16088b187/"
+                target="_blank"
+                id="linkedin"
+              >
+                <img
+                  src="/Main-portfolio/Assets/linkedin-logo.png"
+                  alt="linkedin-img"
+                  height="30px"
+                />
+              </a>
             </div>
 
             <div class="text-box">
@@ -34,7 +65,7 @@
           <div class="avatar">
             <img
               class="Main-img"
-              src="./Assets/manikanta-removebg-preview.png"
+              src="/Main-portfolio/Assets/manikanta-removebg-preview.png"
               alt="Mani animated image"
             />
           </div>
@@ -65,48 +96,204 @@
         </section>
       </div>
       <div class="foot-swich2"></div>
-
       <section class="skills">
-        <h2>Skills</h2>
-        <ul>
-          <li>HTNL</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>Python</li>
-          <li>SCSS</li>
-        </ul>
+        <div class="skill-background">
+          <h2 class="skill-maintxt">Skills</h2>
+          <ul class="skills-show">
+            <div class="skill-html">
+              <ol>
+                <li>
+                  <img
+                    class="img-html"
+                    src="/Main-portfolio/Assets/Html-removebg-preview.png"
+                    alt="Html-image"
+                  />
+                </li>
+              </ol>
+            </div>
+
+            <div class="skill-css">
+              <ol class="skill-css">
+                <li>
+                  <img
+                    class="img-html"
+                    id="img-css"
+                    src="/Main-portfolio/Assets/css-removebg-preview.png"
+                    alt="Html-image"
+                    width="200px"
+                  />
+                </li>
+              </ol>
+            </div>
+            <div class="skill-js">
+              <ol class="skill-js">
+                <li>
+                  <img
+                    class="img-html"
+                    id="img-js"
+                    src="/Main-portfolio/Assets/javascript-removebg-preview.png"
+                    alt="Html-image"
+                    width="200px"
+                  />
+                </li>
+              </ol>
+            </div>
+            <div class="skill-python">
+              <ol class="skill-python">
+                <li>
+                  <img
+                    class="img-html"
+                    id="img-python"
+                    src="/Main-portfolio/Assets/Python-removebg-preview.png"
+                    alt="Html-image"
+                    width="200px"
+                  />
+                </li>
+              </ol>
+            </div>
+            <div class="skill-scss">
+              <ol class="skill-scss">
+                <li>
+                  <img
+                    class="img-html"
+                    id="img-scss"
+                    src="/Main-portfolio/Assets/scss-removebg-preview.png"
+                    alt="Html-image"
+                    width="200px"
+                  />
+                </li>
+              </ol>
+            </div>
+          </ul>
+        </div>
       </section>
-      <section>
-        <h2>Activities:</h2>
-        <ul>
-          <li>Dancing</li>
-          <li>Football</li>
-          <li>Yoga</li>
-        </ul>
-      </section>
-      <section>
-        <h2>Education</h2>
-        <p>
-          I am a full-stack web developer with a strong background in
-          HTML,CSS,JavaScript,Python. I have a deep passion for coding and love
-          to create innovative solutions for web applications. I am currently
-          studying B.Tech at BVCITS
-        </p>
-        <ul>
-          <li>
-            Diploma in Mechanical Engineering (2019-2022),Bonam Venkata
-            Chalamayya Institute of Technology and Science -Amalapuram.
-          </li>
-          <li>
-            Engineering in artificial intelligence & Machine learning
-            (2022-2025),Bonam Venkata Chalamayya Institute of Technology and
-            Science -Amalapuram.
-          </li>
+
+      <div class="background">
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <section>
+          <div class="Projects">
+            <h2>Projects</h2>
+
+            <div>
+              <ul class="projects-content">
+                <div class="project-hover">
+                  <div class="project-1">
+                    <img
+                      class="project-img"
+                      src="/Main-portfolio/Assets/project-show-removebg-preview.png"
+                      alt="bankproject-img"
+                    />
+                    <h4>Bankist Application</h4>
+                    <p>Web Development</p>
+
+                    <!-- <li>Bankist Application</li> -->
+                  </div>
+                </div>
+                <div>
+                  <div class="project-1">
+                    <img
+                      class="project-img"
+                      src="/Main-portfolio/Assets/project-show-removebg-preview.png"
+                      alt="bankproject-img"
+                    />
+                    <h4>Bankist Application</h4>
+                    <p>Web Development</p>
+
+                    <!-- <li>Bankist Application</li> -->
+                  </div>
+                </div>
+                <div>
+                  <div class="project-1">
+                    <img
+                      class="project-img"
+                      src="/Main-portfolio/Assets/project-show-removebg-preview.png"
+                      alt="bankproject-img"
+                    />
+                    <h4>Bankist Application</h4>
+                    <p>Web Development</p>
+
+                    <!-- <li>Bankist Application</li> -->
+                  </div>
+                </div>
+                <div>
+                  <div class="project-1">
+                    <img
+                      class="project-img"
+                      src="/Main-portfolio/Assets/project-show-removebg-preview.png"
+                      alt="bankproject-img"
+                    />
+                    <h4>Bankist Application</h4>
+                    <p>Web Development</p>
+
+                    <!-- <li>Bankist Application</li> -->
+                  </div>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <h3 class="projects-h3">will be added soon...</h3>
+      </div>
+
+      <section class="education">
+        <div class="bg-video">
+          <video class="bg-video__content" autoplay muted loop>
+            <source
+              src="/Main-portfolio/Assets/1851190-uhd_3840_2160_25fps.mp4"
+              type="video/mp4"
+            />
+            <source src="/Main-portfolio/Assets/video.webm" type="video/webm" />
+          </video>
+        </div>
+
+        <h2 id="edu">Education</h2>
+
+        <ul class="education-all">
+          <div class="edu-diploma">
+            <h4>Diploma</h4>
+            <div class="content">
+              <img
+                class="collage-img"
+                src="/Main-portfolio/Assets/2021-07-12-modified.png"
+                alt=""
+              />
+
+              <li>
+                Diploma in Mechanical Engineering (2019-2022),Bonam Venkata
+                Chalamayya Institute of Technology and Science -Amalapuram.
+              </li>
+            </div>
+          </div>
+          <div class="edu-diploma engineering">
+            <h4>Engineering</h4>
+            <div class="content">
+              <img
+                class="collage-img"
+                src="/Main-portfolio/Assets/2021-07-12-modified.png"
+                alt=""
+              />
+
+              <li>
+                Engineering in artificial intelligence & Machine learning
+                (2022-2025),Bonam Venkata Chalamayya Institute of Technology and
+                Science -Amalapuram.
+              </li>
+            </div>
+          </div>
         </ul>
       </section>
 
       <footer>
-        <p>&copy; 2024 John Doe. All rights reserved.</p>
+        <div class="text-box">
+          <a href="#" class="btn btn-white btn-animate" id="btn-x">Contact</a>
+        </div>
+        <div class="footer-text">
+          <p>&copy; 2024 Manikanta. All rights reserved.</p>
+        </div>
       </footer>
     </div>
   </body>
