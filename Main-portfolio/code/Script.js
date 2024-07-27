@@ -1,3 +1,6 @@
+// strict mode
+"use strict";
+
 // selectors
 const nav_home = document.querySelector(".nav-home");
 const nav_about = document.querySelector(".nav-About");
@@ -10,6 +13,33 @@ const skill_show = document.querySelector(".skills");
 const projects = document.querySelector(".Projects");
 const bvc_eduacion_select = document.getElementById("bvc_eduaction");
 const bvc_educationn = document.querySelector(".education");
+
+const btnsOpenModal = document.querySelectorAll(".btn-animate");
+const modal = document.querySelector(".modal");
+const overlay = document.querySelector(".overlay");
+const btnCloseModal = document.querySelector(".btn-form");
+
+const openModal = function (e) {
+  e.preventDefault();
+  modal.classList.remove("hidden");
+  overlay.classList.remove("hidden");
+};
+
+const closeModal = function () {
+  modal.classList.add("hidden");
+  overlay.classList.add("hidden");
+};
+
+btnsOpenModal.forEach((btn) => btn.addEventListener("click", openModal));
+
+btnCloseModal.addEventListener("click", closeModal);
+overlay.addEventListener("click", closeModal);
+
+document.addEventListener("keydown", function (e) {
+  if (e.key === "Escape" && !modal.classList.contains("hidden")) {
+    closeModal();
+  }
+});
 
 // EventListners
 nav_home.addEventListener("click", function (e) {
@@ -31,3 +61,5 @@ nav_projects.addEventListener("click", function (e) {
 bvc_eduacion_select.addEventListener("click", function (e) {
   bvc_educationn.scrollIntoView({ behavior: "smooth" });
 });
+
+btn_animatedd.addEventListener("click", function (e) {});
