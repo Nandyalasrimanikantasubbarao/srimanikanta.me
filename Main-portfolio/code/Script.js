@@ -41,25 +41,12 @@ document.addEventListener("keydown", function (e) {
   }
 });
 
-// EventListners
-nav_home.addEventListener("click", function (e) {
-  main_text.scrollIntoView({ behavior: "smooth" });
-});
+document.querySelector(".nav-bar").addEventListener("click", function (e) {
+  e.preventDefault();
 
-nav_about.addEventListener("click", function (e) {
-  skill_about.scrollIntoView({ behavior: "smooth" });
+  // Maching ids
+  if (e.target.classList.contains("nav_link")) {
+    const id = e.target.getAttribute("href");
+    document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+  }
 });
-
-nav_skill.addEventListener("click", function (e) {
-  skill_show.scrollIntoView({ behavior: "smooth" });
-});
-
-nav_projects.addEventListener("click", function (e) {
-  projects.scrollIntoView({ behavior: "smooth" });
-});
-
-bvc_eduacion_select.addEventListener("click", function (e) {
-  bvc_educationn.scrollIntoView({ behavior: "smooth" });
-});
-
-btn_animatedd.addEventListener("click", function (e) {});
