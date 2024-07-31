@@ -1118,6 +1118,10 @@ span {
   background: none;
 }
 
+.project-btn {
+  cursor: pointer;
+}
+
 /* media queryes */
 @media screen and (min-width: 600px) and (max-width: 1024px) {
   * {
@@ -1460,6 +1464,10 @@ span {
     font-size: 40px;
     margin-left: 60px;
   }
+
+  .projects-h3 {
+    margin-top: 200px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -1503,6 +1511,7 @@ span {
     background-color: whitesmoke;
     padding-top: 20px;
     padding-bottom: 20px;
+    position: fixed;
 
     /* gap: 30px; */
     /* box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1); */
@@ -2025,5 +2034,16 @@ span {
     border-color: initial;
     border-image: initial;
     background: none;
+  }
+  .nav-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 80;
+    top: 0;
+    left: 0;
+    background-color: whitesmoke;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }

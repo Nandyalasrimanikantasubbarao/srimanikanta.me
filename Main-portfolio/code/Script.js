@@ -50,3 +50,7 @@ document.querySelector(".nav-bar").addEventListener("click", function (e) {
     document.querySelector(id).scrollIntoView({ behavior: "smooth" });
   }
 });
+
+function project() {
+  alert("currently working on this section");
+}
