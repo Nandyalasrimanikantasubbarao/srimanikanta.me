@@ -308,21 +308,26 @@
       <button class="btn-form">X</button>
       <div class="container-form">
         <h3 class="contact-head">CONTACT</h3>
-        <form action="/send-email" method="post">
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input
+            type="hidden"
+            name="access_key"
+            value="36763638-8fd7-44e8-94cb-3273243036ef"
+          />
           <div class="Name-text">
             <label for="" class="label">Name:</label>
-            <input type="text" id="nameText" required />
+            <input name="first-name" ype="text" id="nameText" required />
           </div>
           <div class="email-1">
             <label for="" class="label">Email:</label>
-            <input type="email" id="email" required />
+            <input name="email" type="email" id="email" required />
           </div>
           <div class="messge-1">
             <label for="" class="message">Message:</label>
-            <textarea id="text-area" required></textarea>
+            <textarea name="message" id="text-area" required></textarea>
           </div>
           <div id="button-wrapper">
-            <button data-label="Register" class="rainbow-hover">
+            <button type="submit" data-label="Register" class="rainbow-hover">
               <span class="sp">Submit</span>
             </button>
           </div>
