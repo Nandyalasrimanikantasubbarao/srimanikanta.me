@@ -422,7 +422,8 @@ body {
   background-image: url(/Main-portfolio/Assets/pngtree-d-background-for-education-posts-welcoming-kids-and-students-back-to-image_13585453-removebg-preview.png);
   background-repeat: no-repeat;
   /* padding-bottom: 300px; */
-  background-position: top 0% right 100%;
+  background-position: top 0% right 30%;
+  width: 66rem;
   padding-right: 10rem;
 }
 
@@ -1042,6 +1043,7 @@ span {
 
 .hidden {
   visibility: hidden;
+  box-sizing: border-box;
   opacity: 0;
 }
 
@@ -1050,22 +1052,31 @@ span {
 }
 
 #nameText {
-  padding: 1rem 13rem 1rem 0px;
+  padding: 1rem 0px;
   border-radius: 1rem;
   border: 0.1rem solid #ddd;
+  width: 37rem;
+  font-size: 1.6rem;
+  /* width: 80%;
+  font-size: 1.6rem; */
 }
 
 #email {
-  padding: 1rem 13rem 1rem 0px;
+  padding: 1rem 0rem;
   border-radius: 1rem;
   border: 0.1rem solid #ddd;
+  box-sizing: border-box;
+  width: 80%;
+  font-size: 1.6rem;
+  margin-bottom: 3rem;
 }
 
 #text-area {
-  margin-top: 3rem;
-  padding: 1rem 13rem 5rem 0px;
+  padding: 1rem 0rem 5rem 0px;
   border-radius: 1rem;
   border: 0.1rem solid #ddd;
+  width: 80%;
+  font-size: 1.6rem;
 }
 
 #button-wrapper {
@@ -1079,7 +1090,7 @@ span {
   overflow: visible;
 }
 
-.submit {
+/* .submit {
   width: 15.5rem;
   height: 4.5rem;
   background: linear-gradient(
@@ -1093,7 +1104,7 @@ span {
   color: rgba(255, 255, 255, 1);
   text-decoration: none;
   line-height: 300%;
-}
+} */
 .label {
   padding-right: 3rem;
 }
@@ -1126,6 +1137,48 @@ span {
 
 .project-btn {
   cursor: pointer;
+}
+/* From Uiverse.io by JkHuger */
+.rainbow-hover {
+  margin-top: 2rem;
+  font-size: 16px;
+  font-weight: 700;
+  color: #1e1d1e;
+  background-color: orange;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 12px 24px;
+  position: relative;
+  line-height: 24px;
+  border-radius: 9px;
+  box-shadow: 0px 1px 2px #2b3044, 0px 4px 16px #2b3044;
+  transform-style: preserve-3d;
+  transform: scale(var(--s, 1)) perspective(600px) rotateX(var(--rx, 0deg))
+    rotateY(var(--ry, 0deg));
+  perspective: 600px;
+  transition: transform 0.1s;
+}
+
+/* .sp {
+  background: linear-gradient(
+    90deg,
+    #866ee7,
+    #ea60da,
+    #ed8f57,
+    #fbd41d,
+    #2cca91
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  display: block;
+} */
+
+.rainbow-hover:active {
+  transition: 0.3s;
+  transform: scale(0.93);
 }
 
 /* media queryes */
@@ -1473,6 +1526,25 @@ span {
 
   .projects-h3 {
     margin-top: 200px;
+  }
+
+  .Name-text {
+    display: flex;
+  }
+
+  .label:first-child {
+    align-self: center;
+  }
+
+  .email-1 {
+    display: flex;
+  }
+  span {
+    display: grid;
+    grid-template-rows: 20px;
+    grid-template-columns: 20px 30px;
+    margin: 0px;
+    padding: 0%;
   }
 }
 
@@ -2032,7 +2104,7 @@ span {
     color: inherit;
     position: absolute;
     top: 2rem;
-    right: 6rem;
+    right: 10rem;
     font-size: 30px;
     cursor: pointer;
     border-width: initial;
@@ -2051,5 +2123,21 @@ span {
     background-color: whitesmoke;
     padding-top: 20px;
     padding-bottom: 20px;
+  }
+
+  .Name-text {
+    display: flex;
+  }
+
+  #nameText {
+    width: 30rem;
+  }
+
+  span {
+    display: grid;
+    grid-template-rows: 20px;
+    grid-template-columns: 20px 30px;
+    margin: 0px;
+    padding: 0%;
   }
 }

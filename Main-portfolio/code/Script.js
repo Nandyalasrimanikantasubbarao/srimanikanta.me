@@ -20,7 +20,7 @@ const overlay = document.querySelector(".overlay");
 const btnCloseModal = document.querySelector(".btn-form");
 
 const openModal = function (e) {
-  e.preventDefault();
+  // e.preventDefault();
   modal.classList.remove("hidden");
   overlay.classList.remove("hidden");
 };
@@ -42,7 +42,7 @@ document.addEventListener("keydown", function (e) {
 });
 
 document.querySelector(".nav-bar").addEventListener("click", function (e) {
-  e.preventDefault();
+  // e.preventDefault();
 
   // Maching ids
   if (e.target.classList.contains("nav_link")) {
