@@ -33,7 +33,7 @@ const closeModal = function () {
 btnsOpenModal.forEach((btn) => btn.addEventListener("click", openModal));
 
 btnCloseModal.addEventListener("click", closeModal);
-overlay.addEventListener("click", closeModal);
+// overlay.addEventListener("click", closeModal);
 
 document.addEventListener("keydown", function (e) {
   if (e.key === "Escape" && !modal.classList.contains("hidden")) {
@@ -42,7 +42,7 @@ document.addEventListener("keydown", function (e) {
 });
 
 document.querySelector(".nav-bar").addEventListener("click", function (e) {
-  // e.preventDefault();
+  e.preventDefault();
 
   // Maching ids
   if (e.target.classList.contains("nav_link")) {
@@ -54,3 +54,17 @@ document.querySelector(".nav-bar").addEventListener("click", function (e) {
 function project() {
   alert("currently working on this section");
 }
+
+const projectImg = document.querySelector(".project-1");
+const projectHid = document.querySelector(".project-hidden");
+const btnClose = document.querySelector(".btn-close");
+
+projectImg.addEventListener("click", function () {
+  projectHid.classList.toggle("specific");
+  overlay.classList.remove("hidden");
+});
+
+btnClose.addEventListener("click", function () {
+  projectHid.classList.toggle("specific");
+  overlay.classList.add("hidden");
+});
