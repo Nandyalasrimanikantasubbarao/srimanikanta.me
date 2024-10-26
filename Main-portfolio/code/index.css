@@ -1003,23 +1003,7 @@ span {
   box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
   z-index: 1000;
   transition: all 0.5s;
-
-  /* display: grid;
-  justify-items: center;
-  justify-items: center;
-  background: whitesmoke;
-  box-shadow: 5px 5px 3px 5px rgba(0, 0, 0, 0.5);
-  border-radius: 60px;
-  grid-template-columns: 950px;
-  grid-template-rows: 100px 100px 100px 100px;
-  gap: 40px;  */
-  /* 
-  margin: 0px 800px 200px 40px; */
-  /* grid-area: 400px 600px;
-  margin-left: 300px;
-  margin-right: 300px;
-  padding-top: 100px;
-  margin-bottom: 100px; */
+  /* margin: 0px 800px 200px 40px; */
 }
 
 /* .contact {
