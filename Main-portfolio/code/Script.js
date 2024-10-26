@@ -68,3 +68,46 @@ btnClose.addEventListener("click", function () {
   projectHid.classList.toggle("specific");
   overlay.classList.add("hidden");
 });
+
+// stickey navbar
+
+const header = document.querySelector(".header");
+const nav = document.querySelector(".nav-bar");
+
+const navHeight = nav.getBoundingClientRect().height;
+// console.log(navHeight);
+const obsCallBack = function (entries) {
+  entries.forEach((entrie) => {
+    if (!entrie.isIntersecting) nav.classList.add("stickey");
+    else nav.classList.remove("stickey");
+  });
+};
+
+const obs = new IntersectionObserver(obsCallBack, {
+  root: null,
+  threshold: 0,
+  rootMargin: `${navHeight}px`,
+});
+
+obs.observe(header);
+
+// lazy section reveal
+
+// const sectoinALl = document.querySelectorAll(".section");
+
+// const secObsCall = function (entries, observer) {
+//   const [entry] = entries;
+//   if (!entry.isIntersecting) return;
+//   entry.target.classList.remove("section--hidden");
+//   // observer.unobserver(entry.target);
+// };
+
+// const sectionObs = new IntersectionObserver(secObsCall, {
+//   root: null,
+//   threshold: 0.15,
+// });
+
+// sectoinALl.forEach(function (sec) {
+//   sectionObs.observe(sec);
+//   sec.classList.add("section--hidden");
+// });
