@@ -1073,7 +1073,7 @@ span {
   padding: 1rem 0rem 5rem 0px;
   border-radius: 1rem;
   border: 0.1rem solid #ddd;
-  width: 80%;
+  width: 100%;
   font-size: 1.6rem;
 }
 
@@ -1103,9 +1103,6 @@ span {
   text-decoration: none;
   line-height: 300%;
 } */
-.label {
-  padding-right: 3rem;
-}
 
 #sub-btn {
   margin-top: 2rem;
